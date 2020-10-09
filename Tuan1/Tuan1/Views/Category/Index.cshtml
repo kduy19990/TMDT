@@ -1,0 +1,15 @@
+﻿@model IEnumerable<Tuan1.Models.News>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@foreach (var item in Model)
+{
+    <ul>
+        <li>
+            <a href="@item.Category.Alias/@item.Alias">@item.Header</a>
+        </li>
+    </ul>
+}
