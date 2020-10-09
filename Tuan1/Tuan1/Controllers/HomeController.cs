@@ -10,7 +10,10 @@ namespace Tuan1.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            var db = new Tuan1.Models.TMDTEntities();
+            var ListNews = db.Categories;
+
+            return View(ListNews);
         }
 
         public ActionResult About()

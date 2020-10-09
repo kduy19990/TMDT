@@ -18,7 +18,7 @@ namespace Tuan1
                 url: "{Category}",
                 defaults: new { controller = "Category", action = "Index", id = UrlParameter.Optional }
             );
-
+            //
             routes.MapRoute(
               name: "News",
               url: "{Category}/{Alias}",
